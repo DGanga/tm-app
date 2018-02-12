@@ -1,0 +1,654 @@
+<div class="modal fade" id="addAssetModal" tabindex="-1" role="dialog" aria-labelledby="addAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addAssetModalLabel">Add Asset</h4>
+      </div>
+      <form [formGroup]="myForm">
+        <div class="modal-body">
+
+
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipmentLegId">shipmentLegId</label>
+                
+                  <input formControlName="shipmentLegId" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipmentSequenceNumber">shipmentSequenceNumber</label>
+                
+                  <input formControlName="shipmentSequenceNumber" type="number" step='any' class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipFromLocation">shipFromLocation</label>
+                
+                    <textarea formControlName="shipFromLocation" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipToLocation">shipToLocation</label>
+                
+                    <textarea formControlName="shipToLocation" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="pickupArrivalDateTime">pickupArrivalDateTime</label>
+                
+                  <input formControlName="pickupArrivalDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="pickupDepartureDateTime">pickupDepartureDateTime</label>
+                
+                  <input formControlName="pickupDepartureDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="dropArrivalDateTime">dropArrivalDateTime</label>
+                
+                  <input formControlName="dropArrivalDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="dropDepartureDateTime">dropDepartureDateTime</label>
+                
+                  <input formControlName="dropDepartureDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <label for="shipmentLegStatus">shipmentLegStatus</label>
+              <div class="checkbox">
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_NULL"
+                      type="radio"
+                      
+                    />
+                    DSTS_NULL
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_PROCESSING"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_PROCESSING
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_ASSIGNED_TO_CARRIER"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_ASSIGNED_TO_CARRIER
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_PICKING_UP"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_PICKING_UP
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_IN_TRANSIT"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_IN_TRANSIT
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_PARTIALLY_DELIVERED"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_PARTIALLY_DELIVERED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_DELIVERED"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_DELIVERED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_PARTIALLY_POD"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_PARTIALLY_POD
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_POD"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_POD
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_CLOSED"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_CLOSED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="shipmentLegStatus"
+                      
+                      name="shipmentLegStatus"
+                      value="DSTS_SL_D_LLPURGED"
+                      type="radio"
+                      
+                    />
+                    DSTS_SL_D_LLPURGED
+                  </label>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="load">load</label>
+                
+                    <textarea formControlName="load" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+        </div>
+        <div class="modal-footer">
+          <button (click)="addAsset(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="updateAssetModal" tabindex="-1" role="dialog" aria-labelledby="updateAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="updateAssetModalLabel">Update Asset</h4>
+      </div>
+      <form [formGroup]="myForm">
+        <div class="modal-body">
+
+
+          
+            <div class="form-group text-left">
+              <label for="shipmentLegId">shipmentLegId</label>
+
+              
+                <input [ngModel]="shipmentLegId"formControlName="shipmentLegId" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipmentSequenceNumber">shipmentSequenceNumber</label>
+
+              
+                <input [ngModel]="shipmentSequenceNumber" formControlName="shipmentSequenceNumber" type="number" step='any' class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipFromLocation">shipFromLocation</label>
+
+              
+                
+                  <textarea [ngModel]="shipFromLocation" formControlName="shipFromLocation" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipToLocation">shipToLocation</label>
+
+              
+                
+                  <textarea [ngModel]="shipToLocation" formControlName="shipToLocation" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="pickupArrivalDateTime">pickupArrivalDateTime</label>
+
+              
+                <input [ngModel]="pickupArrivalDateTime"formControlName="pickupArrivalDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="pickupDepartureDateTime">pickupDepartureDateTime</label>
+
+              
+                <input [ngModel]="pickupDepartureDateTime"formControlName="pickupDepartureDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="dropArrivalDateTime">dropArrivalDateTime</label>
+
+              
+                <input [ngModel]="dropArrivalDateTime"formControlName="dropArrivalDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="dropDepartureDateTime">dropDepartureDateTime</label>
+
+              
+                <input [ngModel]="dropDepartureDateTime"formControlName="dropDepartureDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipmentLegStatus">shipmentLegStatus</label>
+
+              
+                
+                  <div class="row">
+                    <div class="col-xs-12 checkbox">
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_NULL"
+                          type="radio"
+                          
+                        />
+                        DSTS_NULL
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_PROCESSING"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_PROCESSING
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_ASSIGNED_TO_CARRIER"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_ASSIGNED_TO_CARRIER
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_PICKING_UP"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_PICKING_UP
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_IN_TRANSIT"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_IN_TRANSIT
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_PARTIALLY_DELIVERED"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_PARTIALLY_DELIVERED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_DELIVERED"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_DELIVERED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_PARTIALLY_POD"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_PARTIALLY_POD
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_POD"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_POD
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_CLOSED"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_CLOSED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="shipmentLegStatus"
+                            [ngModel]="shipmentLegStatus"
+                          
+                          name="shipmentLegStatus"
+                          value="DSTS_SL_D_LLPURGED"
+                          type="radio"
+                          
+                        />
+                        DSTS_SL_D_LLPURGED
+                      </label>
+                    
+                    </div>
+                  </div>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="load">load</label>
+
+              
+                
+                  <textarea [ngModel]="load" formControlName="load" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+
+
+        </div>
+        <div class="modal-footer">
+          <button (click)="updateAsset(myForm)" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="deleteAssetModal" tabindex="-1" role="dialog" aria-labelledby="deleteAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deleteAssetModalLabel">Delete Asset</h4>
+      </div>
+      <form [formGroup]="myForm" (ngSubmit)="deleteAsset()">
+        <div class="modal-body">
+          Are you sure you want to delete this asset?
+        </div>
+        <div class="modal-footer">
+          <button (click)="deleteAsset()" type="submit" class="btn btn-danger" data-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+		<strong>Error:</strong> {{errorMessage}}
+	</div>
+  <h1 id='assetName'>ShipmentLegs</h1>
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal">Add Asset</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-responsive table-striped">
+        <thead class="thead">
+          <tr class="thead-cols">
+            
+                <th class="info">shipmentLegId</th>
+            
+                <th class="info">shipmentSequenceNumber</th>
+            
+                <th class="info">shipFromLocation</th>
+            
+                <th class="info">shipToLocation</th>
+            
+                <th class="info">pickupArrivalDateTime</th>
+            
+                <th class="info">pickupDepartureDateTime</th>
+            
+                <th class="info">dropArrivalDateTime</th>
+            
+                <th class="info">dropDepartureDateTime</th>
+            
+                <th class="info">shipmentLegStatus</th>
+            
+                <th class="info">load</th>
+            
+              <th class="info">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let asset of allAssets">
+
+            
+                <td>{{asset.shipmentLegId}}</td>
+            
+                <td>{{asset.shipmentSequenceNumber}}</td>
+            
+                <td>{{asset.shipFromLocation}}</td>
+            
+                <td>{{asset.shipToLocation}}</td>
+            
+                <td>{{asset.pickupArrivalDateTime}}</td>
+            
+                <td>{{asset.pickupDepartureDateTime}}</td>
+            
+                <td>{{asset.dropArrivalDateTime}}</td>
+            
+                <td>{{asset.dropDepartureDateTime}}</td>
+            
+                <td>{{asset.shipmentLegStatus}}</td>
+            
+                <td>{{asset.load}}</td>
+            
+            <td>
+              <button (click)="getForm(asset.shipmentLegId);" type="button" class="btn btn-success" data-toggle="modal" data-target="#updateAssetModal">Update Asset</button>
+
+              <button (click)="setId(asset.shipmentLegId);" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAssetModal">Delete Asset</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,594 @@
+<div class="modal fade" id="addAssetModal" tabindex="-1" role="dialog" aria-labelledby="addAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addAssetModalLabel">Add Asset</h4>
+      </div>
+      <form [formGroup]="myForm">
+        <div class="modal-body">
+
+
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipmentId">shipmentId</label>
+                
+                  <input formControlName="shipmentId" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <label for="freightTerms">freightTerms</label>
+              <div class="checkbox">
+                
+                  <label>
+                    <input
+                      
+                        formControlName="freightTerms"
+                      
+                      name="freightTerms"
+                      value="FT_PRE_PAID"
+                      type="radio"
+                      
+                    />
+                    FT_PRE_PAID
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="freightTerms"
+                      
+                      name="freightTerms"
+                      value="FT_COLLECT"
+                      type="radio"
+                      
+                    />
+                    FT_COLLECT
+                  </label>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipFromLocation">shipFromLocation</label>
+                
+                    <textarea formControlName="shipFromLocation" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipToLocation">shipToLocation</label>
+                
+                    <textarea formControlName="shipToLocation" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="pickupFromDateTime">pickupFromDateTime</label>
+                
+                  <input formControlName="pickupFromDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="pickupToDateTime">pickupToDateTime</label>
+                
+                  <input formControlName="pickupToDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="deliveryFromDateTime">deliveryFromDateTime</label>
+                
+                  <input formControlName="deliveryFromDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="deliveryToDateTime">deliveryToDateTime</label>
+                
+                  <input formControlName="deliveryToDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="commodityCode">commodityCode</label>
+                
+                  <input formControlName="commodityCode" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <label for="unitOfMeasure">unitOfMeasure</label>
+              <div class="checkbox">
+                
+                  <label>
+                    <input
+                      
+                        formControlName="unitOfMeasure"
+                      
+                      name="unitOfMeasure"
+                      value="UMS_NULL"
+                      type="radio"
+                      
+                    />
+                    UMS_NULL
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="unitOfMeasure"
+                      
+                      name="unitOfMeasure"
+                      value="UMS_IMPERIAL"
+                      type="radio"
+                      
+                    />
+                    UMS_IMPERIAL
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="unitOfMeasure"
+                      
+                      name="unitOfMeasure"
+                      value="UMS_METRIC"
+                      type="radio"
+                      
+                    />
+                    UMS_METRIC
+                  </label>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipmentContainerInfo">shipmentContainerInfo</label>
+                
+                    <textarea formControlName="shipmentContainerInfo" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipmentDetails">shipmentDetails</label>
+                
+                    <textarea formControlName="shipmentDetails" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="loggingInfo">loggingInfo</label>
+                
+                    <textarea formControlName="loggingInfo" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipmentLegs">shipmentLegs</label>
+                
+                    <textarea formControlName="shipmentLegs" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+        </div>
+        <div class="modal-footer">
+          <button (click)="addAsset(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="updateAssetModal" tabindex="-1" role="dialog" aria-labelledby="updateAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="updateAssetModalLabel">Update Asset</h4>
+      </div>
+      <form [formGroup]="myForm">
+        <div class="modal-body">
+
+
+          
+            <div class="form-group text-left">
+              <label for="shipmentId">shipmentId</label>
+
+              
+                <input [ngModel]="shipmentId"formControlName="shipmentId" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="freightTerms">freightTerms</label>
+
+              
+                
+                  <div class="row">
+                    <div class="col-xs-12 checkbox">
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="freightTerms"
+                            [ngModel]="freightTerms"
+                          
+                          name="freightTerms"
+                          value="FT_PRE_PAID"
+                          type="radio"
+                          
+                        />
+                        FT_PRE_PAID
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="freightTerms"
+                            [ngModel]="freightTerms"
+                          
+                          name="freightTerms"
+                          value="FT_COLLECT"
+                          type="radio"
+                          
+                        />
+                        FT_COLLECT
+                      </label>
+                    
+                    </div>
+                  </div>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipFromLocation">shipFromLocation</label>
+
+              
+                
+                  <textarea [ngModel]="shipFromLocation" formControlName="shipFromLocation" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipToLocation">shipToLocation</label>
+
+              
+                
+                  <textarea [ngModel]="shipToLocation" formControlName="shipToLocation" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="pickupFromDateTime">pickupFromDateTime</label>
+
+              
+                <input [ngModel]="pickupFromDateTime"formControlName="pickupFromDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="pickupToDateTime">pickupToDateTime</label>
+
+              
+                <input [ngModel]="pickupToDateTime"formControlName="pickupToDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="deliveryFromDateTime">deliveryFromDateTime</label>
+
+              
+                <input [ngModel]="deliveryFromDateTime"formControlName="deliveryFromDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="deliveryToDateTime">deliveryToDateTime</label>
+
+              
+                <input [ngModel]="deliveryToDateTime"formControlName="deliveryToDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="commodityCode">commodityCode</label>
+
+              
+                <input [ngModel]="commodityCode"formControlName="commodityCode" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="unitOfMeasure">unitOfMeasure</label>
+
+              
+                
+                  <div class="row">
+                    <div class="col-xs-12 checkbox">
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="unitOfMeasure"
+                            [ngModel]="unitOfMeasure"
+                          
+                          name="unitOfMeasure"
+                          value="UMS_NULL"
+                          type="radio"
+                          
+                        />
+                        UMS_NULL
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="unitOfMeasure"
+                            [ngModel]="unitOfMeasure"
+                          
+                          name="unitOfMeasure"
+                          value="UMS_IMPERIAL"
+                          type="radio"
+                          
+                        />
+                        UMS_IMPERIAL
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="unitOfMeasure"
+                            [ngModel]="unitOfMeasure"
+                          
+                          name="unitOfMeasure"
+                          value="UMS_METRIC"
+                          type="radio"
+                          
+                        />
+                        UMS_METRIC
+                      </label>
+                    
+                    </div>
+                  </div>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipmentContainerInfo">shipmentContainerInfo</label>
+
+              
+                
+                  <textarea [ngModel]="shipmentContainerInfo" formControlName="shipmentContainerInfo" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipmentDetails">shipmentDetails</label>
+
+              
+                
+                  <textarea [ngModel]="shipmentDetails" formControlName="shipmentDetails" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="loggingInfo">loggingInfo</label>
+
+              
+                
+                  <textarea [ngModel]="loggingInfo" formControlName="loggingInfo" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipmentLegs">shipmentLegs</label>
+
+              
+                
+                  <textarea [ngModel]="shipmentLegs" formControlName="shipmentLegs" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+
+
+        </div>
+        <div class="modal-footer">
+          <button (click)="updateAsset(myForm)" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="deleteAssetModal" tabindex="-1" role="dialog" aria-labelledby="deleteAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deleteAssetModalLabel">Delete Asset</h4>
+      </div>
+      <form [formGroup]="myForm" (ngSubmit)="deleteAsset()">
+        <div class="modal-body">
+          Are you sure you want to delete this asset?
+        </div>
+        <div class="modal-footer">
+          <button (click)="deleteAsset()" type="submit" class="btn btn-danger" data-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+		<strong>Error:</strong> {{errorMessage}}
+	</div>
+  <h1 id='assetName'>Shipment</h1>
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal">Add Asset</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-responsive table-striped">
+        <thead class="thead">
+          <tr class="thead-cols">
+            
+                <th class="info">shipmentId</th>
+            
+                <th class="info">freightTerms</th>
+            
+                <th class="info">shipFromLocation</th>
+            
+                <th class="info">shipToLocation</th>
+            
+                <th class="info">pickupFromDateTime</th>
+            
+                <th class="info">pickupToDateTime</th>
+            
+                <th class="info">deliveryFromDateTime</th>
+            
+                <th class="info">deliveryToDateTime</th>
+            
+                <th class="info">commodityCode</th>
+            
+                <th class="info">unitOfMeasure</th>
+            
+                <th class="info">shipmentContainerInfo</th>
+            
+                <th class="info">shipmentDetails</th>
+            
+                <th class="info">loggingInfo</th>
+            
+                <th class="info">shipmentLegs</th>
+            
+              <th class="info">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let asset of allAssets">
+
+            
+                <td>{{asset.shipmentId}}</td>
+            
+                <td>{{asset.freightTerms}}</td>
+            
+                <td>{{asset.shipFromLocation}}</td>
+            
+                <td>{{asset.shipToLocation}}</td>
+            
+                <td>{{asset.pickupFromDateTime}}</td>
+            
+                <td>{{asset.pickupToDateTime}}</td>
+            
+                <td>{{asset.deliveryFromDateTime}}</td>
+            
+                <td>{{asset.deliveryToDateTime}}</td>
+            
+                <td>{{asset.commodityCode}}</td>
+            
+                <td>{{asset.unitOfMeasure}}</td>
+            
+                <td>{{asset.shipmentContainerInfo}}</td>
+            
+                <td>{{asset.shipmentDetails}}</td>
+            
+                <td>{{asset.loggingInfo}}</td>
+            
+                <td>{{asset.shipmentLegs}}</td>
+            
+            <td>
+              <button (click)="getForm(asset.shipmentId);" type="button" class="btn btn-success" data-toggle="modal" data-target="#updateAssetModal">Update Asset</button>
+
+              <button (click)="setId(asset.shipmentId);" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAssetModal">Delete Asset</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

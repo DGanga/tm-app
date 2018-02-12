@@ -1,0 +1,910 @@
+<div class="modal fade" id="addAssetModal" tabindex="-1" role="dialog" aria-labelledby="addAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addAssetModalLabel">Add Asset</h4>
+      </div>
+      <form [formGroup]="myForm">
+        <div class="modal-body">
+
+
+          
+
+            
+              <div class="form-group text-left">
+                <label for="bookingId">bookingId</label>
+                
+                  <input formControlName="bookingId" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipFromLocation">shipFromLocation</label>
+                
+                    <textarea formControlName="shipFromLocation" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="shipToLocation">shipToLocation</label>
+                
+                    <textarea formControlName="shipToLocation" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <label for="unitOfMeasure">unitOfMeasure</label>
+              <div class="checkbox">
+                
+                  <label>
+                    <input
+                      
+                        formControlName="unitOfMeasure"
+                      
+                      name="unitOfMeasure"
+                      value="UMS_NULL"
+                      type="radio"
+                      
+                    />
+                    UMS_NULL
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="unitOfMeasure"
+                      
+                      name="unitOfMeasure"
+                      value="UMS_IMPERIAL"
+                      type="radio"
+                      
+                    />
+                    UMS_IMPERIAL
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="unitOfMeasure"
+                      
+                      name="unitOfMeasure"
+                      value="UMS_METRIC"
+                      type="radio"
+                      
+                    />
+                    UMS_METRIC
+                  </label>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="currencyCode">currencyCode</label>
+                
+                  <input formControlName="currencyCode" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="chargeAmount">chargeAmount</label>
+                
+                  <input formControlName="chargeAmount" type="number" step='any' class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <label for="status">status</label>
+              <div class="checkbox">
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_NULL"
+                      type="radio"
+                      
+                    />
+                    S_NULL
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_OPEN"
+                      type="radio"
+                      
+                    />
+                    S_OPEN
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_PLANNED"
+                      type="radio"
+                      
+                    />
+                    S_PLANNED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_TENDERED"
+                      type="radio"
+                      
+                    />
+                    S_TENDERED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_TENDER_REJECTED"
+                      type="radio"
+                      
+                    />
+                    S_TENDER_REJECTED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_TENDER_ACCEPTED"
+                      type="radio"
+                      
+                    />
+                    S_TENDER_ACCEPTED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_LOADING_CONFIRMING"
+                      type="radio"
+                      
+                    />
+                    S_LOADING_CONFIRMING
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_LOADED_CONFIRMED"
+                      type="radio"
+                      
+                    />
+                    S_LOADED_CONFIRMED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_IN_TRANSIT"
+                      type="radio"
+                      
+                    />
+                    S_IN_TRANSIT
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_STOPPED"
+                      type="radio"
+                      
+                    />
+                    S_STOPPED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_COMPLETED"
+                      type="radio"
+                      
+                    />
+                    S_COMPLETED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_CLOSED"
+                      type="radio"
+                      
+                    />
+                    S_CLOSED
+                  </label>
+                
+                  <label>
+                    <input
+                      
+                        formControlName="status"
+                      
+                      name="status"
+                      value="S_CANCELLED"
+                      type="radio"
+                      
+                    />
+                    S_CANCELLED
+                  </label>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="carrierCode">carrierCode</label>
+                
+                  <input formControlName="carrierCode" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="serviceCode">serviceCode</label>
+                
+                  <input formControlName="serviceCode" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="VesselArrivalDateTime">VesselArrivalDateTime</label>
+                
+                  <input formControlName="VesselArrivalDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="VesselDepartureDateTime">VesselDepartureDateTime</label>
+                
+                  <input formControlName="VesselDepartureDateTime" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="VesselName">VesselName</label>
+                
+                  <input formControlName="VesselName" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="VoyageNumber">VoyageNumber</label>
+                
+                  <input formControlName="VoyageNumber" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="loggingInfo">loggingInfo</label>
+                
+                    <textarea formControlName="loggingInfo" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="loads">loads</label>
+                
+                    <textarea formControlName="loads" class="form-control" rows="3"></textarea>
+                
+              </div>
+            
+          
+
+        </div>
+        <div class="modal-footer">
+          <button (click)="addAsset(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="updateAssetModal" tabindex="-1" role="dialog" aria-labelledby="updateAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="updateAssetModalLabel">Update Asset</h4>
+      </div>
+      <form [formGroup]="myForm">
+        <div class="modal-body">
+
+
+          
+            <div class="form-group text-left">
+              <label for="bookingId">bookingId</label>
+
+              
+                <input [ngModel]="bookingId"formControlName="bookingId" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipFromLocation">shipFromLocation</label>
+
+              
+                
+                  <textarea [ngModel]="shipFromLocation" formControlName="shipFromLocation" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="shipToLocation">shipToLocation</label>
+
+              
+                
+                  <textarea [ngModel]="shipToLocation" formControlName="shipToLocation" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="unitOfMeasure">unitOfMeasure</label>
+
+              
+                
+                  <div class="row">
+                    <div class="col-xs-12 checkbox">
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="unitOfMeasure"
+                            [ngModel]="unitOfMeasure"
+                          
+                          name="unitOfMeasure"
+                          value="UMS_NULL"
+                          type="radio"
+                          
+                        />
+                        UMS_NULL
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="unitOfMeasure"
+                            [ngModel]="unitOfMeasure"
+                          
+                          name="unitOfMeasure"
+                          value="UMS_IMPERIAL"
+                          type="radio"
+                          
+                        />
+                        UMS_IMPERIAL
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="unitOfMeasure"
+                            [ngModel]="unitOfMeasure"
+                          
+                          name="unitOfMeasure"
+                          value="UMS_METRIC"
+                          type="radio"
+                          
+                        />
+                        UMS_METRIC
+                      </label>
+                    
+                    </div>
+                  </div>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="currencyCode">currencyCode</label>
+
+              
+                <input [ngModel]="currencyCode"formControlName="currencyCode" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="chargeAmount">chargeAmount</label>
+
+              
+                <input [ngModel]="chargeAmount" formControlName="chargeAmount" type="number" step='any' class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="status">status</label>
+
+              
+                
+                  <div class="row">
+                    <div class="col-xs-12 checkbox">
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_NULL"
+                          type="radio"
+                          
+                        />
+                        S_NULL
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_OPEN"
+                          type="radio"
+                          
+                        />
+                        S_OPEN
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_PLANNED"
+                          type="radio"
+                          
+                        />
+                        S_PLANNED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_TENDERED"
+                          type="radio"
+                          
+                        />
+                        S_TENDERED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_TENDER_REJECTED"
+                          type="radio"
+                          
+                        />
+                        S_TENDER_REJECTED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_TENDER_ACCEPTED"
+                          type="radio"
+                          
+                        />
+                        S_TENDER_ACCEPTED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_LOADING_CONFIRMING"
+                          type="radio"
+                          
+                        />
+                        S_LOADING_CONFIRMING
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_LOADED_CONFIRMED"
+                          type="radio"
+                          
+                        />
+                        S_LOADED_CONFIRMED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_IN_TRANSIT"
+                          type="radio"
+                          
+                        />
+                        S_IN_TRANSIT
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_STOPPED"
+                          type="radio"
+                          
+                        />
+                        S_STOPPED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_COMPLETED"
+                          type="radio"
+                          
+                        />
+                        S_COMPLETED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_CLOSED"
+                          type="radio"
+                          
+                        />
+                        S_CLOSED
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="status"
+                            [ngModel]="status"
+                          
+                          name="status"
+                          value="S_CANCELLED"
+                          type="radio"
+                          
+                        />
+                        S_CANCELLED
+                      </label>
+                    
+                    </div>
+                  </div>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="carrierCode">carrierCode</label>
+
+              
+                <input [ngModel]="carrierCode"formControlName="carrierCode" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="serviceCode">serviceCode</label>
+
+              
+                <input [ngModel]="serviceCode"formControlName="serviceCode" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="VesselArrivalDateTime">VesselArrivalDateTime</label>
+
+              
+                <input [ngModel]="VesselArrivalDateTime"formControlName="VesselArrivalDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="VesselDepartureDateTime">VesselDepartureDateTime</label>
+
+              
+                <input [ngModel]="VesselDepartureDateTime"formControlName="VesselDepartureDateTime" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="VesselName">VesselName</label>
+
+              
+                <input [ngModel]="VesselName"formControlName="VesselName" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="VoyageNumber">VoyageNumber</label>
+
+              
+                <input [ngModel]="VoyageNumber"formControlName="VoyageNumber" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="loggingInfo">loggingInfo</label>
+
+              
+                
+                  <textarea [ngModel]="loggingInfo" formControlName="loggingInfo" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="loads">loads</label>
+
+              
+                
+                  <textarea [ngModel]="loads" formControlName="loads" class="form-control" rows="3"></textarea>
+                
+              
+
+            </div>
+          
+
+
+        </div>
+        <div class="modal-footer">
+          <button (click)="updateAsset(myForm)" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="deleteAssetModal" tabindex="-1" role="dialog" aria-labelledby="deleteAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deleteAssetModalLabel">Delete Asset</h4>
+      </div>
+      <form [formGroup]="myForm" (ngSubmit)="deleteAsset()">
+        <div class="modal-body">
+          Are you sure you want to delete this asset?
+        </div>
+        <div class="modal-footer">
+          <button (click)="deleteAsset()" type="submit" class="btn btn-danger" data-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+		<strong>Error:</strong> {{errorMessage}}
+	</div>
+  <h1 id='assetName'>Booking</h1>
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal">Add Asset</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-responsive table-striped">
+        <thead class="thead">
+          <tr class="thead-cols">
+            
+                <th class="info">bookingId</th>
+            
+                <th class="info">shipFromLocation</th>
+            
+                <th class="info">shipToLocation</th>
+            
+                <th class="info">unitOfMeasure</th>
+            
+                <th class="info">currencyCode</th>
+            
+                <th class="info">chargeAmount</th>
+            
+                <th class="info">status</th>
+            
+                <th class="info">carrierCode</th>
+            
+                <th class="info">serviceCode</th>
+            
+                <th class="info">VesselArrivalDateTime</th>
+            
+                <th class="info">VesselDepartureDateTime</th>
+            
+                <th class="info">VesselName</th>
+            
+                <th class="info">VoyageNumber</th>
+            
+                <th class="info">loggingInfo</th>
+            
+                <th class="info">loads</th>
+            
+              <th class="info">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let asset of allAssets">
+
+            
+                <td>{{asset.bookingId}}</td>
+            
+                <td>{{asset.shipFromLocation}}</td>
+            
+                <td>{{asset.shipToLocation}}</td>
+            
+                <td>{{asset.unitOfMeasure}}</td>
+            
+                <td>{{asset.currencyCode}}</td>
+            
+                <td>{{asset.chargeAmount}}</td>
+            
+                <td>{{asset.status}}</td>
+            
+                <td>{{asset.carrierCode}}</td>
+            
+                <td>{{asset.serviceCode}}</td>
+            
+                <td>{{asset.VesselArrivalDateTime}}</td>
+            
+                <td>{{asset.VesselDepartureDateTime}}</td>
+            
+                <td>{{asset.VesselName}}</td>
+            
+                <td>{{asset.VoyageNumber}}</td>
+            
+                <td>{{asset.loggingInfo}}</td>
+            
+                <td>{{asset.loads}}</td>
+            
+            <td>
+              <button (click)="getForm(asset.bookingId);" type="button" class="btn btn-success" data-toggle="modal" data-target="#updateAssetModal">Update Asset</button>
+
+              <button (click)="setId(asset.bookingId);" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAssetModal">Delete Asset</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
